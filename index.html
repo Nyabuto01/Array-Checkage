@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        
+        .age{
+            justify-content: center;
+            text-align: center;
+           background-color:#fff;
+           align-items: center;
+           margin-top: 0;
+           padding: 6%;
+           
+        }
+        .btn{
+            justify-content: center;
+            margin-top: 10%;
+            text-align: center;
+            margin-right:0%;
+            align-items: center;
+            margin-bottom: 0%;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="age">
+    <p><input type ="number" id="ageTocheck" value="50"></p>
+    <button  onclick="myfunction"  class="btn" >Try it</button>
+    <p id="demo"></p>
+</div>
+    <script>
+        const age =[32,12.33,40]
+        function checkAge(age){
+            return age > document.getElementById("agetocheck").value
+        }
+        function myfunction(){
+            document.getElementById("demo").innerHTML=age.filter(checkAge)
+        }
+    </script>
+</body>
+</html>
